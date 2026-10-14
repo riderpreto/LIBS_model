@@ -126,65 +126,7 @@ $$D_{C-K} = \frac{|\mu_{\text{puro}} - \mu_{\text{adulterado}}|}{s_{\text{pooled
 
 $$s_{\text{pooled}} = \sqrt{\frac{(n_p - 1)s_p^2 + (n_a - 1)s_a^2}{n_p + n_a - 2}}$$
 
----
 
-## 🚀 Como Instalar e Executar
-
-### 1. Clonar o Repositório
-```bash
-git clone https://github.com/seu-usuario/libs-npk-chemometrics.git
-cd libs-npk-chemometrics
-```
-
-### 2. Criar e Ativar Ambiente Virtual
-```bash
-# Com venv:
-python -m venv venv
-# Windows:
-.\venv\Scripts\activate
-# Linux/macOS:
-source venv/bin/activate
-```
-
-Ou com Conda:
-```bash
-conda create -n libs python=3.11 -y
-conda activate libs
-```
-
-### 3. Instalar as Dependências
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Executar os Cadernos Jupyter
-Inicie o Jupyter Lab ou VS Code:
-```bash
-jupyter lab
-```
-Abra a pasta `notebooks/` e execute na ordem:
-1. `01_eda_e_preprocessamento.ipynb`: Gera os dados tratados e salva em `data/processed/`.
-2. `02_pca_e_classificacao_knn.ipynb`: Executa PCA, loadings NIST e classificação KNN.
-3. `03_regressao_quimiometrica_pls_rf.ipynb`: Executa PLSR com otimização de LVs e Random Forest.
-4. `04_razoes_elementares_v2.ipynb`: Executa a abordagem estequiométrica V2 baseada em razões Ca/K e calibração linear OLS.
-
----
-
-## 📦 Uso dos Módulos Python no seu Próprio Código
-
-Você pode importar diretamente as funções em qualquer script Python sem depender dos cadernos:
-
-```python
-from src.preprocessing import carregar_esf_bruto, processar_espectro, filtrar_outliers_sam
-from src.features import extrair_areas_picos, calcular_razoes_elementares, PICOS_INTERESSE_VIS
-from src.models import otimizar_componentes_plsr, avaliar_plsr_final
-
-# Exemplo de leitura e processamento
-dados_brutos = carregar_esf_bruto("data/raw/Adulterado_00porcento/VIS/amostra_a___1.esf")
-df_processado = processar_espectro(dados_brutos, denoise_method="wavelet", norm_method="snv")
-```
-
----
 
 ## 👥 Autoria e Agradecimentos
 
