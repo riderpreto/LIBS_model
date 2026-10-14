@@ -4,11 +4,11 @@
 [![Licença](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Embrapa Instrumentação](https://img.shields.io/badge/Embrapa-Instrumenta%C3%A7%C3%A3o-brightgreen.svg)](https://www.embrapa.br/instrumentacao)
 
-Repositório voltado ao pré-processamento de sinais espectrais, redução de dimensionalidade, modelagem quimiométrica e estimativa quantitativa de teores de adulteração em fertilizantes **NPK (10-10-10)** utilizando **Espectroscopia de Emissão Óptica com Plasma Induzido por Laser (LIBS - *Laser-Induced Breakdown Spectroscopy*)**.
+Repositório voltado ao pré-processamento de sinais espectrais, redução de dimensionalidade, modelagem quimiométrica e estimativa quantitativa de teores de adulteração em fertilizantes **NPK** utilizando **Espectroscopia de Emissão Óptica com Plasma Induzido por Laser (LIBS - *Laser-Induced Breakdown Spectroscopy*)**.
 
 O projeto contempla dados coletados em dois canais ópticos simultâneos:
-- **UV (Ultravioleta):** Faixa ~200 nm a 400 nm (linhas de emissão de P, Mg, Ca, C e bandas moleculares de NH / Nitrogênio).
-- **VIS (Visível):** Faixa ~350 nm a 800 nm (linhas de emissão intensa de K, Ca, Fe e Mg).
+- **UV (Ultravioleta):** Faixa ~200 nm a 400 nm.
+- **VIS (Visível):** Faixa ~350 nm a 800 nm.
 
 ---
 
